@@ -1,6 +1,6 @@
 # Codex Cost Band
 
-A Codex plugin that reports usage from local Codex CLI session logs: cumulative tokens, estimated session time, message count, context tokens, and an API-equivalent cost estimate when a bundled model price is available.
+A Codex plugin and live terminal monitor for local Codex session logs: cumulative tokens, session time, message count, 5-hour and weekly usage percentages, and an API-equivalent cost estimate when a bundled model price is available.
 
 It cannot add a live strip above the Codex prompt. Codex plugins currently expose skills, MCP tools, and lifecycle hooks rather than a prompt-area UI extension. Ask Codex to **show the cost band** to run the reporter. The dollar figure is an API-equivalent estimate, not the cost or quota usage of a ChatGPT/Codex subscription. Unknown models show token totals without a price estimate.
 
@@ -32,7 +32,9 @@ On Windows, `py -3 plugins/codex-cost-band/scripts/cost_band.py` is also support
 
 ## Watch a live session
 
-Run `watch.cmd` from this folder to open a live monitor in the current terminal. It refreshes when Codex updates the session log and stops with `Ctrl+C`.
+Run `watch.cmd` from this folder to open a live monitor in the current terminal. It uses a compact, colorized layout, refreshes as Codex updates the session log, and stops with `Ctrl+C`.
+
+The 5-hour and weekly rows show remaining usage percentage and reset time. Codex exposes the percentage windows in its local usage snapshot, not a fixed token allowance, so the monitor does not invent an absolute tokens-left count. The snapshot updates when Codex writes a new usage event.
 
 ```text
 watch.cmd
