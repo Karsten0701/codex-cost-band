@@ -30,3 +30,15 @@ python plugins/codex-cost-band/scripts/cost_band.py
 
 On Windows, `py -3 plugins/codex-cost-band/scripts/cost_band.py` is also supported.
 
+## Watch a live session
+
+Run `watch.cmd` from this folder to open a live monitor in the current terminal. It refreshes when Codex updates the session log and stops with `Ctrl+C`.
+
+```text
+watch.cmd
+watch.cmd --session 01a1e9bb-1748-70a2-9b94-c4df5488cac9
+watch.cmd --refresh 2
+```
+
+The default follows the newest modified local Codex session. Use `--session` when multiple Codex chats are active.
+
