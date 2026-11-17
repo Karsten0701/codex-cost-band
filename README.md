@@ -14,7 +14,13 @@ From this repository:
 codex plugin marketplace add Karsten0701/codex-cost-band
 ```
 
-Then open the Codex plugin browser with `/plugins`, select **Local Mods**, and install **Codex Cost Band**. Local marketplace plugin installation is currently done through the plugin browser.
+Then install it with:
+
+```text
+codex plugin add codex-cost-band@local-mods
+```
+
+Use `codex plugin list` to inspect installed plugins.
 
 ## Run locally
 
