@@ -1,0 +1,23 @@
+{
+  "name": "local-mods",
+  "interface": {
+    "displayName": "Local Mods"
+  },
+  "plugins": [
+    {
+      "name": "codex-cost-band",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Karsten0701/codex-cost-band.git",
+        "path": "./plugins/codex-cost-band",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
+

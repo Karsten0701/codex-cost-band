@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-cost-band",
+  "version": "0.1.0",
+  "description": "Summarize local Codex session tokens, time, messages, and estimated API-equivalent cost.",
+  "skills": "./skills/"
+}
